@@ -1,0 +1,112 @@
+body {
+    background: #10101c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+.add-task {
+    display: flex;
+}
+
+.add-task input {
+    margin-right: 12px;
+    padding: 12px 0;
+    outline: none;
+    height: 32px;
+    width: 420px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    border-bottom: 2px solid white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.add-task input:focus,
+.add-task input:active {
+    border-bottom: 2px solid pink;
+}
+
+.add-task button {
+    outline: none;
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 50%;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s linear;
+}
+
+.add-task button:hover {
+    background: rgb(252, 169, 183);
+    transition: 0.1s linear;
+}
+
+.add-task button svg {
+    width: 42px;
+    fill: white;
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.task {
+    margin-top: 24px;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    background: #191933;
+}
+
+.task .checking {
+    flex: 1;
+    margin-right: 12px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: 0.2s linear;
+}
+
+.task .checking:hover {
+    border: 1px solid pink;
+    background: pink;
+    transition: 0.2s linear;
+}
+
+.task span {
+    flex: 24;
+    color: white;
+    font-size: 20px;
+}
+
+.task button {
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.task button svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: 0.2s linear;
+}
+
+.task button:hover svg {
+    fill: red;
+    transition: 0.2s linear;
+}
